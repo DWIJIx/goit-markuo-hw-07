@@ -11,7 +11,7 @@
     margin: 0px;
     list-style: none;
 }
-body {
+.body {
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -23,7 +23,16 @@ p {
     margin: 0px;
 }
 /* Header */
+
 .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+}
+
+.header-flex {
     display: flex;
     align-items: center;
 }
@@ -36,27 +45,39 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-.page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ececec;
-}
+/* Logo */
 .logo {
     display: inline-block;
-    color: var(--primary-text-color);
     text-decoration: none;
     font-family: raleway, sens-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     }
-
-.logo .web {
+.logo__web {
     color: var(--accent-color);
 }
-.site-nav .link {
+.logo__studio {
+    color: var(--primary-text-color);
+}
+
+/* Header-menu */
+
+.header-menu__list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-menu__item {
+    position: relative;
+    margin-right: 50px;
+}
+
+.header-menu__item:last-child {
+    margin-right: 0px;
+}
+
+.header-menu__link {
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -65,16 +86,14 @@ p {
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav {
-    display: flex;
-    margin-left: 93px;  
+
+.header-menu__link--current {
+    color: var(--accent-color)
 }
 
 /* Нижнє підкреслення */
-.under-line {
-    position: relative;
-}
-.under-line .current::after {
+
+.header-menu__link--current::after {
     content: '';
     position: absolute;
     display: block;
@@ -87,44 +106,7 @@ p {
 
 }
 
-
-.site-nav .item {
-    margin-right: 50px;
-}
-.site-nav .item:last-child {
-    margin-right: 0px;
-}
-.header-contacts .item {
-    margin-right: 30px;
-}
-.header-contacts .item:last-child {
-    margin-right: 0px;
-}
-.site-nav .link:hover,
-.site-nav .link:focus,
-.header-contacts .link:hover,
-.header-contacts .link:focus,
-.footer-adress .link:hover,
-.footer-adress .link:focus {
-    color: var(--accent-color)
-  }
-
-.link svg {
-    margin-right: 10px;
-}
-
-.site-nav .link.current {
-    color: var(--accent-color)
-}
-.header-contacts .link {
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* Header-contacts */
 
 .header-contacts {
     display: flex;
@@ -134,22 +116,49 @@ p {
     margin-left: auto;
     align-items: center;
 }
-/* задання кольору іконкам в хедері */
-.header-icons {
-    fill: var(--secondary-text-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
- 
-/* задання кольору при ховері і фокусі іконки */
-.link:hover .header-icons,
-.link:focus .header-icons {
-    fill: var(--accent-color);
+.header-contacts__item {
+    margin-right: 30px;
 }
-/* для вирівнювання іконки з текстом в хедері */
-.link.for-icons {
+.header-contacts__item:last-child {
+    margin-right: 0px;
+}
+.header-contacts__link {
     display: flex;
     align-items: center;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* задання кольору іконкам в хедері */
+.header-contacts__icons {
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu__link:hover,
+.header-menu__link:focus,
+.header-contacts__link:hover,
+.header-contacts__link:focus {
+    color: var(--accent-color)
+}
+
+/* задання кольору при ховері і фокусі іконки */
+.header-contacts__link:hover .header-contacts__icons,
+.header-contacts__link:focus .header-contacts__icons {
+    fill: var(--accent-color);
+}
+
+
+
+
+
+
 
 /* Main */
 .hero {
@@ -244,7 +253,7 @@ p {
     letter-spacing: 0.03em;
 }
 
- .main-section-li h3{
+.main-section-li h3{
     margin-bottom: 10px;
     
 }
@@ -403,7 +412,7 @@ p {
 
 
 /* Footer */
-.logo .studio {
+.logo__studio--inverse {
     color: var(--secondary-accent-color);
 
 }
@@ -426,6 +435,11 @@ p {
     line-height: 1.71;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+
+.footer-adress .link:hover,
+.footer-adress .link:focus {
+    color: var(--accent-color)
 }
 
 .footer-adress li{
