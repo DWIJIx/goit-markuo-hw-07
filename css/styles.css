@@ -513,7 +513,7 @@ p {
     background-color: var(--accent-color)
 }
 
-.social-icons__icon--white {
+.social-icons__svg--white {
     fill: var(--secondary-accent-color);
 }
 
