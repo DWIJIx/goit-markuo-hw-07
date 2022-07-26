@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="body">
     <header class="header">
@@ -350,8 +350,8 @@
     <footer class="footer">
         <div class="container footer-flex">
            <div>
-                <div class="footer-logo">
-                    <a href="./index.html" class="logo">
+                <div>
+                    <a href="./index.html" class="logo logo__footer">
                         <span class="logo__web">Web</span><span class="logo__studio--inverse">Studio</span>
                     </a>
                 </div>
@@ -377,28 +377,28 @@
             
             <ul class="social-icons list">
                 <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--white">
-                        <svg class="social-icons__svg--white" width="20px" height="20px">
+                    <a href="" class="social-icons__link social-icons__link--bgc-grey">
+                        <svg class="social-icons__svg--fill-white" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-instagram"></use>
                         </svg></a>
                 </li>
                 <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--white">
-                        <svg class="social-icons__svg--white" width="20px" height="20px">
+                    <a href="" class="social-icons__link social-icons__link--bgc-grey">
+                        <svg class="social-icons__svg--fill-white" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--white">
-                        <svg class="social-icons__svg--white" width="20px" height="20px">
+                    <a href="" class="social-icons__link social-icons__link--bgc-grey">
+                        <svg class="social-icons__svg--fill-white" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-icons__item">
-                    <a href="" class="social-icons__link social-icons__link--white">
-                        <svg class="social-icons__svg--white" width="20px" height="20px">
+                    <a href="" class="social-icons__link social-icons__link--bgc-grey">
+                        <svg class="social-icons__svg--fill-white" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </a>
@@ -414,7 +414,7 @@
                 </p>
                 <div class="footer-form__flext">
                     <input type="text" name="E-mail" class="footer-form__input" placeholder="E-mail">
-                    <button type="submit" class="button button--footer-padding">Підписатися
+                    <button type="submit" class="button button__footer-form">Підписатися
                         <svg class="button__icon" width="24px" height="24px">
                             <use href="./images/icons.svg#flight-icon"></use>
                         </svg>
@@ -425,9 +425,6 @@
            </form>
         </div>
     </footer>
-
-
-
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
              <button data-modal-close type="button" class="modal-button">
