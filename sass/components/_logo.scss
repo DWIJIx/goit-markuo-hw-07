@@ -5,19 +5,21 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+    &__web {
+        color: var(--accent-color);
+    }
+
+    &__studio {
+        color: var(--primary-text-color);
+    }
+
+    &__footer {
+        margin-bottom: 20px;
+    }
+
+    &__studio--inverse {
+        color: var(--secondary-accent-color);
+    }
 }
 
-.logo__web {
-    color: var(--accent-color);
-}
-
-.logo__studio {
-    color: var(--primary-text-color);
-}
-.logo__footer {
-    margin-bottom: 20px;
-}
-
-.logo__studio--inverse {
-    color: var(--secondary-accent-color);
-}
